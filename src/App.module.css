@@ -1,0 +1,91 @@
+.container {
+  margin: 0 auto;
+  max-width: 50rem;
+}
+
+/* form */
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -1.875rem;
+  margin-bottom: 3rem;
+}
+
+form input {
+  margin-right: .5rem;
+  background: var(--gray-400);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  height: 3.37rem;
+  padding: 0.25rem 1rem;
+  outline: transparent;
+  transition: all .5s;
+  flex: 1;
+}
+
+form input:hover {
+  outline: 1px solid var(--purple-dark);
+}
+
+form button {
+  display: flex;
+  align-items: center;
+
+  background: var(--blue-dark);
+  color: var(--white);
+  border: none;
+  border-radius: 8px;
+  height: 3.37rem;
+  padding: 0.25rem 0.5rem;
+  transition: all .5s;
+}
+
+form button:hover {
+  background: var(--blue);
+}
+
+form button svg {
+  margin-left: .25rem;
+}
+
+/* table */
+
+.listHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--gray-300);
+ 
+}
+
+.listHeaderBlue {
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.listHeaderPurple {
+  color: var(--purple);
+  font-weight: bold;
+}
+
+.listBody {
+  margin: 0 auto;
+  max-width: 40rem;
+}
+
+.emptyBody {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 1rem;
+  padding: 3rem 0;
+}
+
+

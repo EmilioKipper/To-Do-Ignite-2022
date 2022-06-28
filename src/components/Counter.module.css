@@ -1,0 +1,6 @@
+.counter {
+  padding: 0.125rem 0.5rem;
+  background: var(--gray-400);
+  border-radius: 999px;
+  margin-left: .25rem;
+}

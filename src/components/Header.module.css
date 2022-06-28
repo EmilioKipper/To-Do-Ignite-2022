@@ -1,0 +1,22 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 12.5rem;
+  background: var(--gray-700);
+}
+
+.container img {
+  margin-right: 0.5rem;
+}
+
+.todo {
+  color: var(--blue);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.todo::after {
+  content: 'do';
+  color: var(--purple-dark);
+}

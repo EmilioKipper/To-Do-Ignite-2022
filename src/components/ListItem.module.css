@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem;
+  
+  margin-top: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--gray-400);
+  background-color: var(--gray-500);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.06);
+
+  color: var(--gray-100);
+}
+
+.container p {
+  flex: 1;
+  text-decoration: none;
+}
+
+.container .strikeText {
+  text-decoration: line-through;
+}
+
+.deleteButton {
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+}
+
+.deleteButton svg {
+  color: var(--gray-300);
+}
+
+.checkboxContainer {
+  display: block;
+  position: relative;
+  padding: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkboxContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 2px solid var(--blue);
+}
+
+.checkboxContainer:hover input:not(:checked) ~ .checkmark {
+  border: 2px solid var(--blue-dark);
+}
+
+.checkboxContainer input:checked ~ .checkmark {
+  background-color: var(--purple-dark);
+  border: 2px solid var(--purple-dark);
+}
+
+.checkboxContainer:hover input:checked ~ .checkmark {
+  background-color: var(--purple);
+  border: 2px solid var(--purple);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkboxContainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkboxContainer .checkmark:after {
+  left: 7px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
